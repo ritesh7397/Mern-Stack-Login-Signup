@@ -1,0 +1,45 @@
+/* Overall container for home page */
+.home-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Style for logged-in user's name */
+  .logged {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the logout button */
+  .logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Optional: Add some padding to the button on focus to avoid jumping */
+  .logout-button:focus {
+    outline: none;
+    padding: 10px 20px;
+  }
+  
+  

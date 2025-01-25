@@ -1,0 +1,135 @@
+/* Footer Container */
+.footer {
+  background-color: #02254e; /* Dark blue */
+  color: white;
+  padding: 2rem 4rem;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+}
+
+/* Footer Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap; /* Ensures 3 items stay in one row */
+  margin-bottom: 2rem;
+}
+
+/* Logo Section */
+.footer-logo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.logo-bold {
+  color: #fdd835; /* Yellow */
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.footer-description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d1d5db; /* Light gray */
+}
+
+/* Links Section */
+.footer-links,
+.footer-terms {
+  margin-top: 1rem;
+  flex: 1; /* Ensure equal space for each section */
+}
+
+.footer-links h3,
+.footer-terms h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul,
+.footer-terms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-terms li {
+  margin: 0.3rem 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover,
+.footer-terms li:hover {
+  color: #fdd835; /* Yellow on hover */
+}
+
+
+.footer-links,{}
+
+/* Social Media Icons */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.footer-socials i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-socials i:hover {
+  color: #fdd835; /* Yellow on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: none;
+  height: 1px;
+  background-color: #d1d5db;
+  margin: 1rem 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.footer-logo{
+  width:50vw;
+  margin-left:10px;
+  gap: 30px;
+  
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-links,
+  .footer-terms {
+      margin-top: 1.5rem;
+  }
+
+  .footer-socials {
+      margin-top: 1.5rem;
+  }
+}

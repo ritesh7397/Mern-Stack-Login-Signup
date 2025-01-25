@@ -1,0 +1,113 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02254e; /* Dark blue */
+    color: white;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 70px;
+  }
+  
+  /* Logo Section */
+  .navbar-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .logo-bold {
+    color: #fdd835; /* Yellow for "NEXUS" */
+  }
+  
+  .navbar-logo p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  /* Buttons Section */
+  .navbar-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login-btn,
+  .signup-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: white;
+    color: 02254e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+
+  }
+  
+  .signup-btn {
+    background-color: #02254e;
+    color: white;
+  }
+  
+  .nav-link-login{
+    text-decoration: none;
+    color:#02254e;
+  }
+  .nav-link-signup{
+    text-decoration: none;
+    color:white;
+
+  }
+  .login-btn:hover {
+    background-color: white;
+    color: #02254e;
+  }
+  
+  .signup-btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .navbar-logo {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar-logo p {
+      font-size: 0.8rem;
+    }
+  
+    .navbar-buttons {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%; /* Full-width buttons on mobile */
+      text-align: center;
+    }
+  }
+  
