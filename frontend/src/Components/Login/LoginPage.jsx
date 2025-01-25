@@ -34,7 +34,7 @@ function LoginPage (){
       return toast.error('email and password are required')
     }
     try {
-      const url = "http://localhost:3000/login";
+      const url = "https://ritesh7397-mern-stack-login-signup-1.onrender.com/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {

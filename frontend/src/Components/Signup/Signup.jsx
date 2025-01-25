@@ -35,7 +35,7 @@ function Signup(){
       return toast.error('name, email and password are required')
     }
     try {
-      const url = "http://localhost:3000/signup";
+      const url = "https://ritesh7397-mern-stack-login-signup-1.onrender.com/signup";
       const response = await fetch(url, {
         method: "POST",
         headers: {
