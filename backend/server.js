@@ -13,16 +13,14 @@ app.use(cors());
 connectDB();
 
 app.get('/',(req,res)=>{
-    res.send("welocm")
+    res.send("Welcome Users")
 })
 
 const signupRoutes = require('./Routes/SignupRoutes');
 const loginRoutes = require('./Routes/LoginRoutes')
-const productRoutes = require('./Routes/ProductRouter')
 
 app.use('/signup',signupRoutes)
 app.use('/login', loginRoutes);
-app.use('/products', productRoutes)
 
 
 app.listen(PORT,()=>{
